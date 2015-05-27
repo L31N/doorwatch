@@ -16161,11 +16161,11 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
 <part name="K1" library="relay" deviceset="FINDER-43.61" device=""/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="X3" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="T3" library="transistor" deviceset="BC847" device=""/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
 </parts>
