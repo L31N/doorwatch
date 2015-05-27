@@ -16168,6 +16168,12 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="T3" library="transistor" deviceset="BC847" device=""/>
 <part name="R10" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
+<part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805"/>
+<part name="R11" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
+<part name="T4" library="transistor" deviceset="BC847" device=""/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="P+8" library="supply1" deviceset="+5V" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16239,6 +16245,12 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <instance part="R9" gate="G$1" x="12.7" y="-48.26" rot="R180"/>
 <instance part="T3" gate="G$1" x="-20.32" y="-60.96"/>
 <instance part="R10" gate="G$1" x="-25.4" y="-83.82"/>
+<instance part="LED4" gate="G$1" x="-58.42" y="-114.3" rot="R270"/>
+<instance part="R11" gate="G$1" x="-71.12" y="-114.3" rot="R180"/>
+<instance part="T4" gate="G$1" x="-55.88" y="-106.68"/>
+<instance part="R12" gate="G$1" x="-66.04" y="-106.68"/>
+<instance part="P+8" gate="1" x="-53.34" y="-93.98"/>
+<instance part="GND5" gate="1" x="-78.74" y="-121.92"/>
 </instances>
 <busses>
 </busses>
@@ -16352,6 +16364,12 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <wire x1="78.74" y1="-71.12" x2="15.24" y2="-71.12" width="0.1524" layer="91"/>
 <junction x="15.24" y="-71.12"/>
 </segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-76.2" y1="-114.3" x2="-78.74" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-78.74" y1="-114.3" x2="-78.74" y2="-119.38" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -16403,6 +16421,11 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <pinref part="T2" gate="G$1" pin="C"/>
 <wire x1="25.4" y1="-38.1" x2="25.4" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="P+8" gate="1" pin="+5V"/>
+<pinref part="T4" gate="G$1" pin="C"/>
+<wire x1="-53.34" y1="-96.52" x2="-53.34" y2="-101.6" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -16451,6 +16474,11 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <pinref part="SV1" gate="1" pin="7"/>
 <wire x1="-55.88" y1="15.24" x2="-71.12" y2="15.24" width="0.1524" layer="91"/>
 <label x="-71.12" y="15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="-71.12" y1="-106.68" x2="-83.82" y2="-106.68" width="0.1524" layer="91"/>
+<label x="-83.82" y="-106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TXD0" class="0">
@@ -16736,6 +16764,28 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="-17.78" y1="-78.74" x2="-17.78" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-17.78" y1="-83.82" x2="-20.32" y2="-83.82" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="T4" gate="G$1" pin="B"/>
+<wire x1="-60.96" y1="-106.68" x2="-58.42" y2="-106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="T4" gate="G$1" pin="E"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="-53.34" y1="-111.76" x2="-53.34" y2="-114.3" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-114.3" x2="-55.88" y2="-114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-63.5" y1="-114.3" x2="-66.04" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
