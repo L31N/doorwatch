@@ -16560,8 +16560,8 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <instance part="R9" gate="G$1" x="-66.04" y="-43.18" rot="R180"/>
 <instance part="T3" gate="G$1" x="-15.24" y="2.54"/>
 <instance part="R10" gate="G$1" x="-20.32" y="-20.32"/>
-<instance part="LED4" gate="G$1" x="-53.34" y="-99.06" rot="R270"/>
-<instance part="R11" gate="G$1" x="-66.04" y="-99.06" rot="R180"/>
+<instance part="LED4" gate="G$1" x="-66.04" y="-99.06" rot="R270"/>
+<instance part="R11" gate="G$1" x="-55.88" y="-99.06" rot="R180"/>
 <instance part="T4" gate="G$1" x="-50.8" y="-91.44"/>
 <instance part="R12" gate="G$1" x="-60.96" y="-91.44"/>
 <instance part="P+8" gate="1" x="-48.26" y="-78.74"/>
@@ -16598,10 +16598,10 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <junction x="-63.5" y="-66.04"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="-71.12" y1="-99.06" x2="-73.66" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="-99.06" x2="-73.66" y2="-104.14" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<wire x1="-73.66" y1="-99.06" x2="-71.12" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -16821,16 +16821,16 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <net name="N$28" class="0">
 <segment>
 <pinref part="T4" gate="G$1" pin="E"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="-48.26" y1="-96.52" x2="-48.26" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="-99.06" x2="-50.8" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-50.8" y1="-99.06" x2="-48.26" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="-58.42" y1="-99.06" x2="-60.96" y2="-99.06" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="-63.5" y1="-99.06" x2="-60.96" y2="-99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
