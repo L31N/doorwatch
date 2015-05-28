@@ -16350,7 +16350,7 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="IC1" library="regulators" deviceset="LM2576" device="S"/>
+<part name="IC1" library="regulators" deviceset="LM2576" device="S" value="LM2576S-5.0"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="inductors" deviceset="DR125" device="" value="100uH"/>
 <part name="D1" library="diode" deviceset="1N581*" device="" technology="7-B"/>
@@ -16410,7 +16410,6 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
-<part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 </parts>
 <sheets>
 <sheet>
@@ -16430,8 +16429,8 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <instance part="X4" gate="G$1" x="-83.82" y="-7.62" rot="R180"/>
 <instance part="D3" gate="G$1" x="-66.04" y="-10.16" rot="R180"/>
 <instance part="P+4" gate="1" x="-53.34" y="10.16"/>
-<instance part="LED3" gate="G$1" x="58.42" y="0"/>
-<instance part="R6" gate="G$1" x="58.42" y="-12.7" rot="R270"/>
+<instance part="LED3" gate="G$1" x="58.42" y="-12.7"/>
+<instance part="R6" gate="G$1" x="58.42" y="-2.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -16468,10 +16467,10 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <junction x="-35.56" y="-20.32"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="-63.5" y1="-10.16" x2="-53.34" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="-17.78" x2="58.42" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="-20.32" x2="45.72" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="45.72" y="-20.32"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<wire x1="58.42" y1="-17.78" x2="58.42" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -16499,8 +16498,8 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <junction x="45.72" y="5.08"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="58.42" y1="5.08" x2="58.42" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="58.42" y1="2.54" x2="58.42" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="5.08" x2="58.42" y2="2.54" width="0.1524" layer="91"/>
 <junction x="58.42" y="5.08"/>
 </segment>
 </net>
@@ -16529,9 +16528,9 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="-5.08" x2="58.42" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="58.42" y1="-7.62" x2="58.42" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -17080,7 +17079,6 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <instance part="H1" gate="G$1" x="17.78" y="81.28"/>
 <instance part="H2" gate="G$1" x="17.78" y="73.66"/>
 <instance part="H3" gate="G$1" x="17.78" y="66.04"/>
-<instance part="H4" gate="G$1" x="17.78" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -17088,6 +17086,23 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="101,2,83.82,-15.24,X2-1,F,,,,"/>
+<approved hash="101,2,83.82,-7.62,X2-4,F,,,,"/>
+<approved hash="101,2,83.82,-2.54,X2-6,F,,,,"/>
+<approved hash="101,2,83.82,0,X2-7,F,,,,"/>
+<approved hash="101,2,83.82,2.54,X2-8,F,,,,"/>
+<approved hash="101,2,83.82,5.08,X2-9,F,,,,"/>
+<approved hash="202,2,27.94,-10.16,IC2,T2IN,,,,"/>
+<approved hash="202,2,58.42,-15.24,IC2,R2IN,,,,"/>
+<approved hash="104,2,35.56,20.32,IC2P,VCC,+3V3,,,"/>
+<approved hash="115,2,-38.1,-4.00473,SV1,,,,,"/>
+<approved hash="115,3,-70.7983,1.27,LED1,,,,,"/>
+<approved hash="115,3,-68.2583,-57.15,LED2,,,,,"/>
+<approved hash="115,1,-80.5561,-8.62753,X4,,,,,"/>
+<approved hash="115,1,58.7417,-13.97,LED3,,,,,"/>
+<approved hash="115,3,-67.31,-99.3817,LED4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
