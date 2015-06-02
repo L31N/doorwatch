@@ -16377,7 +16377,7 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
 <part name="Q1" library="transistor-power" deviceset="IRLZ44Z" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
@@ -16394,7 +16394,7 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <part name="LED3" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
 <part name="K1" library="relay" deviceset="FINDER-43.61" device=""/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R7" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
 <part name="P+7" library="supply1" deviceset="+12V" device=""/>
 <part name="X3" library="con-phoenix-508" deviceset="MKDSN1,5/2-5,08" device=""/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
@@ -16404,7 +16404,7 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
 <part name="T4" library="transistor" deviceset="BC847" device=""/>
-<part name="R12" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
+<part name="R12" library="rcl" deviceset="R-EU_" device="M0805" value="1k"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
