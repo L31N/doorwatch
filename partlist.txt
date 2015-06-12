@@ -1,6 +1,6 @@
 Partlist
 
-Exported from doorwatchV2.sch at 12.06.15 07:35
+Exported from doorwatchV2.sch at 12.06.15 07:50
 
 EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
 
@@ -8,7 +8,7 @@ Assembly variant:
 
 Part     Value           Device          Package         Library          Sheet
 
-C1       100uF           C-EUC0805       C0805           rcl              1
+C1       100uF           CPOL-EUE2.5-7   E2,5-7          rcl              1
 C2       1000uF          CPOL-EUE5-10.5  E5-10,5         rcl              1
 C3       100nF           C-EUC0805       C0805           rcl              2
 C4       100nF           C-EUC0805       C0805           rcl              2

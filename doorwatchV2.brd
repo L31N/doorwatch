@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26,14 +26,14 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -78,8 +78,8 @@
 <wire x1="90.17" y1="101.6" x2="90.17" y2="24.13" width="0.635" layer="20"/>
 <wire x1="90.17" y1="24.13" x2="-1.27" y2="24.13" width="0.635" layer="20"/>
 <wire x1="-1.27" y1="24.13" x2="-1.27" y2="101.6" width="0.635" layer="20"/>
-<dimension x1="-1.27" y1="101.6" x2="90.17" y2="101.6" x3="44.45" y3="105.41" layer="48"/>
-<dimension x1="-1.27" y1="24.13" x2="-1.27" y2="101.6" x3="-10.16" y3="62.865" layer="48"/>
+<dimension x1="-1.27" y1="101.6" x2="90.17" y2="101.6" x3="44.45" y3="105.41" textsize="3.5" layer="48"/>
+<dimension x1="-1.27" y1="24.13" x2="-1.27" y2="101.6" x3="-10.16" y3="62.865" textsize="3.5" layer="48"/>
 <text x="48.26" y="97.79" size="2.1844" layer="25" rot="R180">fuks doorwatch V2</text>
 <text x="36.83" y="72.39" size="2.1844" layer="25" rot="R270">r-pi interface</text>
 <text x="35.56" y="91.44" size="2.1844" layer="25">05.2015</text>
@@ -1236,6 +1236,25 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/tr&gt;
 &lt;/table&gt;</description>
 <packages>
+<package name="E2,5-7">
+<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm, diameter 7 mm</description>
+<wire x1="-3.048" y1="0" x2="-2.286" y2="0" width="0.1524" layer="21"/>
+<wire x1="-2.667" y1="-0.381" x2="-2.667" y2="0.381" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-1.27" x2="-0.254" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-1.27" x2="-0.254" y2="1.27" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.27" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0" x2="1.651" y2="0" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
+<pad name="-" x="1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="+" x="-1.27" y="0" drill="0.8128" diameter="1.6002"/>
+<text x="3.048" y="2.032" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.048" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
+</package>
 <package name="C0805">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
@@ -1812,7 +1831,7 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1898,6 +1917,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -1995,7 +2017,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="18.288" y="56.261" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="18.288" y="55.499" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C1" library="rcl" package="C0805" value="100uF" x="21.59" y="59.69" smashed="yes" rot="R90">
+<element name="C1" library="rcl" package="E2,5-7" value="100uF" x="21.59" y="59.69" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.67" y="58.42" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="24.13" y="58.42" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -2111,7 +2133,7 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="5"/>
 <contactref element="D1" pad="A"/>
 <contactref element="C2" pad="-"/>
-<contactref element="C1" pad="2"/>
+<contactref element="C1" pad="-"/>
 <contactref element="D3" pad="A"/>
 <contactref element="SV1" pad="6"/>
 <contactref element="SV1" pad="14"/>
@@ -2148,7 +2170,6 @@ design rules under a new name.</description>
 <wire x1="60.96" y1="31.75" x2="60.96" y2="31.97" width="0.4064" layer="1"/>
 <wire x1="25.4" y1="31.75" x2="31.75" y2="31.75" width="0.4064" layer="1"/>
 <wire x1="24.13" y1="60.96" x2="21.59" y2="60.96" width="0.4064" layer="1"/>
-<wire x1="21.59" y1="60.96" x2="21.59" y2="60.64" width="0.4064" layer="1"/>
 <wire x1="31.75" y1="31.75" x2="54.61" y2="31.75" width="0.4064" layer="1"/>
 <wire x1="54.61" y1="31.75" x2="54.61" y2="31.97" width="0.4064" layer="1"/>
 <wire x1="31.75" y1="31.75" x2="31.75" y2="31.97" width="0.4064" layer="1"/>
@@ -2317,7 +2338,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="+12V">
 <contactref element="IC1" pad="1"/>
-<contactref element="C1" pad="1"/>
+<contactref element="C1" pad="+"/>
 <contactref element="X4" pad="3"/>
 <contactref element="OK1" pad="6"/>
 <contactref element="Q1" pad="D"/>
@@ -2327,7 +2348,6 @@ design rules under a new name.</description>
 <wire x1="15.24" y1="54.61" x2="19.05" y2="58.42" width="0.4064" layer="1"/>
 <wire x1="12.7" y1="54.61" x2="15.24" y2="54.61" width="0.4064" layer="1"/>
 <wire x1="10.16" y1="57.15" x2="12.7" y2="54.61" width="0.4064" layer="1"/>
-<wire x1="21.59" y1="58.42" x2="21.59" y2="58.74" width="0.4064" layer="1"/>
 <wire x1="10.16" y1="57.15" x2="9.38" y2="55.96" width="0.4064" layer="1"/>
 <wire x1="26.67" y1="62.23" x2="26.67" y2="54.61" width="0.4064" layer="1"/>
 <wire x1="25.4" y1="63.5" x2="26.67" y2="62.23" width="0.4064" layer="1"/>
