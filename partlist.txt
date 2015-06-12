@@ -1,6 +1,6 @@
 Partlist
 
-Exported from doorwatchV2.sch at 12.06.15 07:50
+Exported from doorwatchV2.sch at 12.06.15 08:47
 
 EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
 
@@ -20,7 +20,7 @@ D3       1N5817-B        1N5817-B        DO41-7.6        diode            1
 IC1      LM2576S-5.0     LM2576S         TO263-5         regulators       1
 IC2      MAX3232CPE      MAX3232CPE      DIL16           maxim            2
 K1       FINDER-43.61    FINDER-43.61    FINDER-43.61    relay            3
-L1       100uH           DR125           DR125           inductors        1
+L1       100uH           L-EU0207/7      0207/7          rcl              1
 LED1                     LEDCHIP-LED0805 CHIP-LED0805    led              3
 LED2                     LEDCHIP-LED0805 CHIP-LED0805    led              3
 LED3                     LEDCHIP-LED0805 CHIP-LED0805    led              1
