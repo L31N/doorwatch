@@ -1,0 +1,50 @@
+Partlist
+
+Exported from doorwatchV2.sch at 12.06.15 07:35
+
+EAGLE Version 7.3.0 Copyright (c) 1988-2015 CadSoft
+
+Assembly variant: 
+
+Part     Value           Device          Package         Library          Sheet
+
+C1       100uF           C-EUC0805       C0805           rcl              1
+C2       1000uF          CPOL-EUE5-10.5  E5-10,5         rcl              1
+C3       100nF           C-EUC0805       C0805           rcl              2
+C4       100nF           C-EUC0805       C0805           rcl              2
+C5       100nF           C-EUC0805       C0805           rcl              2
+C6       100nF           C-EUC0805       C0805           rcl              2
+C7       100nF           C-EUC0805       C0805           rcl              2
+D1       1N5817-B        1N5817-B        DO41-7.6        diode            1
+D3       1N5817-B        1N5817-B        DO41-7.6        diode            1
+IC1      LM2576S-5.0     LM2576S         TO263-5         regulators       1
+IC2      MAX3232CPE      MAX3232CPE      DIL16           maxim            2
+K1       FINDER-43.61    FINDER-43.61    FINDER-43.61    relay            3
+L1       100uH           DR125           DR125           inductors        1
+LED1                     LEDCHIP-LED0805 CHIP-LED0805    led              3
+LED2                     LEDCHIP-LED0805 CHIP-LED0805    led              3
+LED3                     LEDCHIP-LED0805 CHIP-LED0805    led              1
+LED4                     LEDCHIP-LED0805 CHIP-LED0805    led              3
+OK1      LTV826          LTV826          DIL08           optocoupler      3
+Q1       IRLZ44Z         IRLZ44Z         TO220BH         transistor-power 3
+R1       1k              R-EU_M0805      M0805           rcl              3
+R2       330             R-EU_M0805      M0805           rcl              3
+R3       1k              R-EU_M0805      M0805           rcl              3
+R4       330             R-EU_M0805      M0805           rcl              3
+R5       1k              R-EU_M0805      M0805           rcl              3
+R6       330             R-EU_M0805      M0805           rcl              1
+R7       1k              R-EU_M0805      M0805           rcl              3
+R8       10k             R-EU_M0805      M0805           rcl              3
+R9       10k             R-EU_M0805      M0805           rcl              3
+R10      330             R-EU_M0805      M0805           rcl              3
+R11      330             R-EU_M0805      M0805           rcl              3
+R12      1k              R-EU_M0805      M0805           rcl              3
+SV1                      ML26            ML26            con-harting-ml   2
+T1       BC847           BC847           SOT23           transistor       3
+T2       BC847           BC847           SOT23           transistor       3
+T3       BC847           BC847           SOT23           transistor       3
+T4       BC847           BC847           SOT23           transistor       3
+X1       MKDSN1,5/2-5,08 MKDSN1,5/2-5,08 MKDSN1,5/2-5,08 con-phoenix-508  3
+X2       D-SUB9-H2M09RA  D-SUB9-H2M09RA  H2M09RA         con-thomas-betts 2
+X3       MKDSN1,5/2-5,08 MKDSN1,5/2-5,08 MKDSN1,5/2-5,08 con-phoenix-508  3
+X4                       733980-62       733980-62       con-conrad       1
