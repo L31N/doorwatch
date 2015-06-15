@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17940,7 +17940,7 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <parts>
 <part name="IC1" library="regulators" deviceset="LM2576" device="S" value="LM2576S-5.0"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="L1" library="rcl" deviceset="L-EU" device="0207/7" value="100uH"/>
+<part name="L1" library="rcl" deviceset="L-EU" device="0207/12" value="100uH"/>
 <part name="D1" library="diode" deviceset="1N581*" device="" technology="7-B"/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="100uF"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="1000uF"/>
