@@ -9785,22 +9785,6 @@ Order code 240-517</description>
 <text x="-4.445" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="2200-15.24">
-<description>&lt;b&gt;newport components&lt;/b&gt; 2200 Serie RM 15.24 mm&lt;p&gt;
-Miniatur Axial Lead Inductors&lt;br&gt;
-Source: www.rsonline.de&lt;br&gt;
-Order code 240-517</description>
-<wire x1="-4.9" y1="1.9" x2="4.9" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="4.9" y1="1.9" x2="4.9" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="4.9" y1="-1.9" x2="-4.9" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-4.9" y1="-1.9" x2="-4.9" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.5" layer="51"/>
-<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.5" layer="51"/>
-<pad name="1" x="-7.62" y="0" drill="0.8" diameter="1.27"/>
-<pad name="2" x="7.62" y="0" drill="0.8" diameter="1.27"/>
-<text x="-4.445" y="2.54" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.81" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="2200-11.43">
 <description>&lt;b&gt;newport components&lt;/b&gt; 2200 Serie RM 11.43 mm&lt;p&gt;
 Miniatur Axial Lead Inductors&lt;br&gt;
@@ -10394,6 +10378,22 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <pad name="2" x="2.5" y="0" drill="0.9" diameter="1.4224"/>
 <text x="-4.5056" y="4.6326" size="1.27" layer="25">&gt;NAME</text>
 <text x="-4.5056" y="-6.4106" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="2200-20.32">
+<description>L-XHBCC
+Rastermaß 20.32 mm, Durchmesser 6mm</description>
+<pad name="1" x="-7.89" y="0" drill="0.8" diameter="1.27"/>
+<pad name="2" x="17.89" y="0" drill="0.8" diameter="1.27"/>
+<text x="-5.445" y="4.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="8.19" y="-2.635" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.4064" layer="21"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="3.81" width="0.4064" layer="21"/>
+<wire x1="-5.08" y1="3.81" x2="15.24" y2="3.81" width="0.4064" layer="21"/>
+<wire x1="15.24" y1="3.81" x2="15.24" y2="0" width="0.4064" layer="21"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="15.24" y1="-3.81" x2="-5.08" y2="-3.81" width="0.4064" layer="21"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="0" width="0.4064" layer="21"/>
+<wire x1="15.24" y1="0" x2="17.78" y2="0" width="0.4064" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -13870,7 +13870,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="2200-15.24" package="2200-15.24">
+<device name="2200-20.32" package="2200-20.32">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -17940,7 +17940,7 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <parts>
 <part name="IC1" library="regulators" deviceset="LM2576" device="S" value="LM2576S-5.0"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="L1" library="rcl" deviceset="L-EU" device="0207/12" value="100uH"/>
+<part name="L1" library="rcl" deviceset="L-EU" device="2200-20.32" value="100uH"/>
 <part name="D1" library="diode" deviceset="1N581*" device="" technology="7-B"/>
 <part name="C1" library="rcl" deviceset="CPOL-EU" device="E2.5-7" value="100uF"/>
 <part name="C2" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="1000uF"/>
