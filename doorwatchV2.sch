@@ -17988,7 +17988,6 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <part name="R8" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="R9" library="rcl" deviceset="R-EU_" device="M0805" value="10k"/>
 <part name="T3" library="transistor" deviceset="BC847" device=""/>
-<part name="R10" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
 <part name="LED4" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R11" library="rcl" deviceset="R-EU_" device="M0805" value="330"/>
 <part name="T4" library="transistor" deviceset="BC847" device=""/>
@@ -18389,7 +18388,6 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <instance part="R8" gate="G$1" x="-66.04" y="15.24" rot="R180"/>
 <instance part="R9" gate="G$1" x="-66.04" y="-43.18" rot="R180"/>
 <instance part="T3" gate="G$1" x="-15.24" y="2.54"/>
-<instance part="R10" gate="G$1" x="-20.32" y="-20.32"/>
 <instance part="LED4" gate="G$1" x="-66.04" y="-99.06" rot="R270"/>
 <instance part="R11" gate="G$1" x="-55.88" y="-99.06" rot="R180"/>
 <instance part="T4" gate="G$1" x="-50.8" y="-91.44"/>
@@ -18411,9 +18409,10 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="-68.58" y1="-20.32" x2="-66.04" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="-68.58" y="-20.32"/>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="-25.4" y1="-20.32" x2="-66.04" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-20.32" x2="-66.04" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="-66.04" y="-20.32"/>
+<pinref part="K1" gate="K" pin="2"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -18638,14 +18637,6 @@ Source: http://www.farnell.com/datasheets/87682.pdf</description>
 <pinref part="T3" gate="G$1" pin="E"/>
 <pinref part="K1" gate="K" pin="1"/>
 <wire x1="-12.7" y1="-2.54" x2="-12.7" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="K1" gate="K" pin="2"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="-20.32" x2="-15.24" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
